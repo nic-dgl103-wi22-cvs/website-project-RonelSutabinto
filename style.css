@@ -21,11 +21,14 @@ body {
   font-family:'segoe ui';
 }
 
+/*Navigation header and text style*/
+/*================================*/
 .nav {
   height:50px;
   width:100%;
   background-color:#0c3d75;
   position:relative;
+  margin: auto;
 }
 
 .nav>.nav-header {
@@ -36,7 +39,7 @@ body {
   display:inline-block;
   font-size:22px;
   color:#fff;
-  padding:10px 5px 10px 15px;
+  padding:10px 10px 10px 10px;
 }
 
 .nav>.nav-btn {
@@ -90,6 +93,7 @@ body {
      border-top:2px solid #eee;
   }
   
+  /*navigation botton link*/
   .nav>.nav-links {
      position:absolute;
      display:block;
