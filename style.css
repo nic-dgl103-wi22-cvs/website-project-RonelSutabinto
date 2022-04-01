@@ -1,123 +1,112 @@
 @charset "UTF-8";
 
+:root {
+  --primary-color: #1659a5;
+  --secondary-color: #f99500;
+  --light-color: #437dc9;
+  --dark-color: rgb(51, 51, 51);
+  --max-width: 1100px;
+}
 
-/*set header style and alignment*/
-header{
+/* Nav bar */
+
+#main-nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 6fr 3fr 2fr;
+  padding: 1rem;
+  align-items: center;
+}
+
+#main-nav .logo {
+  width: 180px;
+}
+
+#main-nav ul {
+  justify-self: end;
   display: flex;
-  width: auto;
-  margin-top: 25px;
-  margin-left: 20px;
-  margin-right: 20px;
- 
 }
 
-/*set header style and alignment*/
-* {
-  box-sizing:border-box;
+#main-nav ul li a {
+  padding: 0.75rem;
+  font-weight: bold;
 }
 
-body {
-  margin:0px;
-  font-family:'segoe ui';
+#main-nav ul li a.current {
+  background: var(--primary-color);
+  color: #fff;
 }
 
-/*Navigation header and text style*/
-/*================================*/
-.nav {
-  height:50px;
-  width:100%;
-  background-color:#0c3d75;
-  position:relative;
+#main-nav ul li a:hover {
+  background: var(--light-color);
+  color: var(--dark-color);
+}
+
+#main-nav .social {
+  justify-self: center;
+}
+
+#main-nav .social i {
+  color: #777;
+  margin-right: 0.5rem;
+}
+
+#showcase .showcase-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+#showcase {
+  color: whitesmoke;
+  background: rgb(79, 115, 163);
+  padding: 2rem;
+  /* padding-bottom: 1rem; */
+  position: relative;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content p {
+  margin-bottom: 1rem;
+}
+/*end navigation bar=========*/
+
+/* Utility classes */
+
+.container {
+  max-width: var(--max-width);
   margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
 }
 
-.nav>.nav-header {
-  display:inline;
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #1597e7;
 }
 
-.nav>.nav-header>.nav-title {
-  display:inline-block;
-  font-size:22px;
-  color:#fff;
-  padding:10px 10px 10px 10px;
+a {
+  color: var(--dark-color);
+  text-decoration: none;
 }
 
-.nav>.nav-btn {
-  display:none;
+ul {
+  list-style: none;
 }
 
-.nav>.nav-links {
-  display:inline;
-  float:right;
-  font-size:18px;
+img {
+  width: 100%;
 }
-
-.nav>.nav-links>a {
-  display:inline-block;
-  padding:13px 10px 13px 10px;
-  text-decoration:none;
-  color:#efefef;
-}
-
-.nav>.nav-links>a:hover {
-  background-color:rgba(30, 102, 196, 0.3);
-}
-
-.nav>#nav-check {
-  display:none;
-}
-
-@media (max-width:600px)  {
-  .nav>.nav-btn {
-     display:inline-block;
-     position:absolute;
-     right:0px;
-     top:0px;
-  }
-  
-  .nav>.nav-btn>label {
-     display:inline-block;
-     width:50px;
-     height:50px;
-     padding:13px;
-  }
-  
-  .nav>.nav-btn>label:hover,.nav  #nav-check:checked~.nav-btn>label {
-     background-color:rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav>.nav-btn>label>span {
-     display:block;
-     width:25px;
-     height:10px;
-     border-top:2px solid #eee;
-  }
-  
-  /*navigation botton link*/
-  .nav>.nav-links {
-     position:absolute;
-     display:block;
-     width:100%;
-     background-color:rgb(58, 167, 240);
-     height:0px;
-     transition:all 0.3s ease-in;
-     overflow-y:hidden;
-     top:50px;
-     left:0px;
-  }
-  
-  .nav>.nav-links>a {
-     display:block;
-     width:100%;
-  }
-  
-  .nav>#nav-check:not(:checked)~.nav-links {
-     height:0px;
-  }
-  
-  .nav>#nav-check:checked~.nav-links {
-     height:calc(100vh - 50px);
-     overflow-y:auto;
-  }
-
-}
+/*======End utility class=====*/
