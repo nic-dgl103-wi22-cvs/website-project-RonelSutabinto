@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/* root color page theme */
 :root {
   --primary-color: #1659a5;
   --secondary-color: #f99500;
@@ -91,12 +92,6 @@
   overflow: hidden;
 }
 
-.category {
-  --sports-color: #f99500;
-  --ent-color: #a66bbe;
-  --tech-color: #1597e7;
-}
-
 a {
   color: var(--dark-color);
   text-decoration: none;
@@ -109,4 +104,83 @@ ul {
 img {
   width: 100%;
 }
+
+.card {
+  background: white;
+  padding: 1rem;
+}
 /*======End utility class=====*/
+
+/* Home articles */
+
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-articles .articles-container>*:first-child,
+#home-articles .articles-container>*:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  align-items: center;
+  grid-column: 1/span 2;
+}
+
+#home-articles .articles-container>*:last-child {
+  grid-column: 2/span 2;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+
+/*home category card layout*/
+.category-tech {
+  background: var(--techCard-color);
+  margin-bottom: 1rem;
+}
+
+.category-ent {
+  background: var(--ent-color);
+  margin-bottom: 1rem;
+}
+
+.category {
+  --techCard-color: #f35b7c;
+  --ent-color: #88abf7;
+  --tech-color: #1597e7;
+}
+.bg-dark {
+  background: var(--dark-color);
+  color: white;
+}
+
+.bg-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: white;
+}
+/*===============*/
