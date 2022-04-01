@@ -184,3 +184,31 @@ img {
   color: white;
 }
 /*===============*/
+
+/* styling header attribute*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family:  'Times New Roman', Times, serif;
+  margin-bottom: 0.55rem;
+  line-height: 1.3rem;
+}
+
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+  color: white;
+}
