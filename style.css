@@ -1,18 +1,22 @@
 @charset "UTF-8";
 
+body {background-color: white;}
+
 /* root color page theme */
 :root {
   --primary-color: #1659a5;
   --secondary-color: #f99500;
   --light-color: #437dc9;
-  --dark-color: rgb(51, 51, 51);
+  --dark-color: black;
+  --light-color2: #abc7ec;
   --max-width: 1100px;
+  --dark-color: black;
 }
 
 /* Nav bar */
 
 #main-nav {
-  background: #fff;
+  background: #1659a5;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -21,7 +25,7 @@
 #main-nav .container {
   display: grid;
   grid-template-columns: 6fr 3fr 2fr;
-  padding: 1rem;
+  padding: 0.75rem;
   align-items: center;
 }
 
@@ -39,14 +43,15 @@
   font-weight: bold;
 }
 
+/*nav background color*/
 #main-nav ul li a.current {
-  background: var(--primary-color);
-  color: #fff;
+  background: var(--light-color2);
+  color: #1659a5;
 }
 
 #main-nav ul li a:hover {
-  background: var(--light-color);
-  color: var(--dark-color);
+  background: var(--light-color2);
+  color: #1659a5;
 }
 
 #main-nav .social {
@@ -67,8 +72,8 @@
 }
 
 #showcase {
-  color: whitesmoke;
-  background: rgb(79, 115, 163);
+  color: #1659a5;
+  background: #f4f6f9;
   padding: 2rem;
   /* padding-bottom: 1rem; */
   position: relative;
@@ -106,7 +111,7 @@ img {
 }
 
 .card {
-  background: white;
+  background: #f4f6f9;
   padding: 1rem;
 }
 /*======End utility class=====*/
@@ -166,7 +171,7 @@ img {
 
 .category {
   --techCard-color: #f35b7c;
-  --ent-color: #88abf7;
+  --ent-color: rgb(88, 127, 179);
   --tech-color: #1597e7;
 }
 .bg-dark {
@@ -176,7 +181,7 @@ img {
 
 .bg-primary {
   background: var(--primary-color);
-  color: white;
+  color: #1659a5;
 }
 
 .bg-secondary {
@@ -185,30 +190,34 @@ img {
 }
 /*===============*/
 
-/* styling header attribute*/
+/* styling family attribute*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family:  'Times New Roman', Times, serif;
+  font-family:  Arial, sans-serif;
   margin-bottom: 0.55rem;
   line-height: 1.3rem;
 }
 
 
 .bg-dark h1,
-.bg-dark h2,
-.bg-dark h3,
 .bg-dark a,
 .bg-primary h1,
-.bg-primary h2,
-.bg-primary h3,
 .bg-primary a,
 .bg-secondary h1,
 .bg-secondary h2,
 .bg-secondary h3,
 .bg-secondary a {
-  color: white;
+  color: #1659a5;
 }
+
+.bg-dark h2,
+.bg-dark h3,
+.bg-primary h2,
+.bg-primary h3 {color: #000000;}
+
+
+  
