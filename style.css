@@ -8,7 +8,7 @@ body {background-color: white;}
 /* root color page theme */
 :root {
   --primary-color: #1659a5;
-  --secondary-color: #f99500;
+  --secondary-color: #22a1cf;
   --light-color: #437dc9;
   --dark-color: black;
   --light-color2: #769bca;
@@ -122,27 +122,6 @@ img {
 }
 /*======End utility class=====*/
 
-/* Home card style */
-
-#home-articles .articles-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
-}
-
-#home-articles .articles-container>*:first-child,
-#home-articles .articles-container>*:last-child {
-  display: grid;
-  grid-template-columns: 30% 30% 30% auto; 
-  grid-gap: 1rem;
-  align-items: center;
-  grid-column: 2/span 2;
-}
-
-#home-articles .articles-container>*:last-child {
-  grid-column: 2/span 2;
-}
-
 .py-1 {
   padding: 1.5rem 0;
 }
@@ -225,6 +204,7 @@ h6 {
 .bg-primary h2,
 .bg-primary h3 {color: #000000;}
 
+/* Home card style */
 /*tech benefit article grid style*/
 .column-home {
   float: left;
@@ -252,8 +232,11 @@ a{
   font-family:  Arial, sans-serif;
 }
 
+#liFooter li {
+  margin-bottom: 10px;
+}
 h2.home-article {
-  padding-bottom: 15px; 
+  padding-bottom: 25px; 
   text-align: center;
 }
 
@@ -261,3 +244,75 @@ h3.article-color{
   color: var(--primary-color);
 }
   
+
+/* footer */
+
+#main-footer {
+  background: #333;
+  color: white;
+}
+
+#main-footer img {
+  width: 150px;
+}
+
+#main-footer a {
+  color: white;
+}
+
+#main-footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+}
+
+#main-footer .footer-container>*:last-child {
+  background: #444;
+  grid-column: 1/ span 4;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+#main-footer .footer-container input[type='email'] {
+  width: 90%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#main-footer .footer-container input[type='submit'] {
+  width: 90%;
+}
+
+
+/* botton style and colors*/
+.btn {
+  display: inline-block;
+  border: none;
+  background: #333;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem;
+}
+
+.btn-light {
+  background: var(--light-color);
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
