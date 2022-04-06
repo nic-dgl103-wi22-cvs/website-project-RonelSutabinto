@@ -360,8 +360,9 @@
   text-align: center;
   margin-bottom: var(--dl-space-space-halfunit);
 }
+
 .home-text03 {
-  color: var(--dl-color-scheme-black);
+  color: var(--dl-color-scheme-white);
   font-size: 18px;
   text-align: center;
   line-height: 1.44;
@@ -1496,5 +1497,5 @@ img {  display: block;}
 
 /*header image*/
 div.bg-image{
-  background-image: url("images/Home.png")
+  background-image: url("images/home.png")
 }
