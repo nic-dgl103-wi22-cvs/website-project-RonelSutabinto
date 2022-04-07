@@ -25,7 +25,7 @@
   --dl-space-space-fourunits: 64px;
   --dl-color-scheme-lightblue: #162d5aff;
   --dl-space-space-threeunits: 48px;
-  --dl-color-scheme-lightblue: services-cardrgb(214, 236, 247);
+  --dl-color-scheme-lightblue: rgb(214, 236, 247);
   --dl-space-space-oneandhalfunits: 24px;
   --dl-color-scheme-lightblue02: #96b5d9;
 }
@@ -831,8 +831,8 @@
   font-style: normal;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 4px;
-  letter-spacing: 0.1em;
+  margin-bottom: 3px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 .home-text52 {
@@ -1342,10 +1342,10 @@
   padding-bottom: 10px;
 }
 .tab-selector-btn:hover {
-  box-shadow: inset 0px -2px 0px #B6472F;
+  box-shadow: inset 0px -2px 0px #1659a5;
 }
 .tab-selector-btn:active {
-  box-shadow: inset 0px -2px 0px #B6472F;
+  box-shadow: inset 0px -2px 0px #a1c1e6;
 }
 .navigation-Link {
   font-size: 16px;
@@ -1495,7 +1495,17 @@ input {
 
 img {  display: block;}
 
-/*header image*/
-div.bg-image{
+/*Home header image*/
+div.bg-imageH{
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
   background-image: url("images/home.png")
+}
+
+/*Services header image*/
+div.bg-imageS{
+  background-repeat: no-repeat;
+    background-size: 100% 100%;
+  background-image: url("images/ServicesH.png")
+  
 }
