@@ -298,6 +298,8 @@
   line-height: 26px;
   margin-bottom: var(--dl-space-space-unit);
 }
+
+
 .blog-card-text4 {
   text-decoration: underline;
 }
@@ -842,9 +844,17 @@
 .home-text54 {
   color: var(--dl-color-scheme-black80);
   text-align: center;
-  line-height: 26px;
+  line-height: 30px;
   margin-bottom: var(--dl-space-space-twounits);
 }
+.home-text44 {
+  color: var(--dl-color-scheme-black80);
+  text-align: center;
+  line-height: 30px;
+  font-size: 24px;
+  margin-bottom: var(--dl-space-space-twounits);
+}
+
 .home-primary2 {
   margin-bottom: var(--dl-space-space-threeunits);
 }
