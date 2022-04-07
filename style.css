@@ -1077,6 +1077,19 @@
   .home-image-container {
     width: 100%;
   }
+
+  .home-image-container02 {
+   
+
+    width: 156px;
+  height: 156px;
+  display: flex;
+  align-items: left;
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-twounits);
+  justify-content: left;
+  background-color: var(--dl-color-scheme-lightblue02);
+  }
   .home-image6 {
     width: 100%;
   }
@@ -1426,7 +1439,7 @@
   text-decoration: none;
 }
 .heading2 {
-  font-size: 46px;
+  font-size: 40px;
   font-family: DM Serif Display;
   font-weight: 400;
   line-height: 63px;
